@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @apply bg-gray-100;
+}
+
+.page-width {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.button {
+    appearance: none;
+    @apply py-2 px-4 border rounded;
+}
+
+.button.button--primary {
+    @apply bg-gray-700 text-white;
+}
+
+.button.button--large {
+    width: 300px;
+    max-width: 100%;
+}
